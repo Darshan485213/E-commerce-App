@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    box-shadow: 0 8px 6px -6px grey;
+    /* if browser doesn't support shadow */
+    --webkit-box-shadow: 0 8px 6px -6px grey;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7) !important;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 300 !important;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.footer {
+    height: 16vh;
+    color: white;
+    padding: 25px;
+    background: -webkit-linear-gradient(to left, #000, #434343);
+    background: linear-gradient(to left, #000000, #370101);
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.home-link {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-decoration: none;
+    font-size: clamp(2vw, 3vh);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-link:hover {
+    color: #fff;
+}
+
+.contact-container {
+    width: 100%;
+    padding: 40px;
+    /* background: linear-gradient(to right, #2e86de, #4c4c4c); */
+    /* background: linear-gradient(to left, #2b3038, #45608b, #273a2b); */
+    color: black;
+    /* Changed the text color to white */
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black
+    /* Changed the heading color to white */
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    /* Align address info to the left */
+    margin-bottom: 40px;
+}
+
+.contact-image {
+    margin-right: 20px;
+}
+
+.contact-image img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out, bounce 1s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.contact-details {
+    min-height: 20vh;
+    min-width: 20vw;
+    font-family: 'playfair display', serif;
+    font-size: 17px;
+    padding: 20px;
+    text-align: left;
+    color: black;
+    /* Changed the color to white */
+}
+
+.contact-form {
+    text-align: center;
+    max-width: 500px;
+    /* Increased the max-width for the form */
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: black;
+    /* Changed the color to white */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    min-width: 300px;
+    max-width: 30vw;
+    padding: 16px;
+    /* Increased the padding for the form fields */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #eceaea;
+    border: #000 solid 2px !important;
+    box-shadow: #c0bfbf 5px;
+}
+
+.contact-form textarea {
+    min-width: 300px;
+    max-width: 30vw;
+    height: 180px;
+}
+
+.contact-form button {
+    padding: 16px 32px;
+    background-color: whitesmoke;
+    color: green;
+    border-color: green;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    color: whitesmoke;
+    background-color: green;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    padding: 50px;
+    /* background: linear-gradient(to left, #000000, #370101); */
+    /* background: linear-gradient(to left, #2b3038, #45608b, #273a2b); */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(138, 137, 137, 0.6);
+    /* background: linear-gradient(to left, #6d8bbc, #66a073, #45608b); */
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-content {
+        flex-direction: row;
+    }
+
+    .about-image {
+        margin-right: 40px;
+    }
+
+    .about-card {
+        margin-top: 0;
+    }
+}
+
+.policy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to left, #2b3038, #45608b, #273a2b); */
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.policy-content {
+    max-width: 800px;
+    text-align: justify;
+    color: black;
+}
+
+.policy-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.policy-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Shining line animation */
+.shining-line {
+    /* Add any other styles you want for the Checkout NavLink */
+    position: relative;
+    overflow: hidden; /* Hide the overflowing part of the line */
+  }
+  
+  /* Keyframes animation for the shining line effect */
+  @keyframes lineAnimation {
+    0% {
+      left: -100%; /* Start from the left of the parent element */
+    }
+    100% {
+      left: 100%; /* Move to the right of the parent element */
+    }
+  }
+  
+  /* Apply the lineAnimation to the element with the line-animation class */
+  .line-animation {
+    width: 100%; /* Occupy the entire width of the parent element */
+    height: 2px; /* Adjust the height as needed */
+    background-color: white; /* Adjust the color as needed */
+    position: absolute; /* Position within the shining-line container */
+    bottom: 0; /* Align the line to the bottom of the container */
+    left: 0; /* Initially position it to the left of the container */
+    animation: lineAnimation 3s linear infinite; /* Adjust the animation duration as needed */
+    /* box-shadow: 0px -4px 6px #dcd9d980; */
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.7);
+    border-radius: 5px 5px 0px 0px;
+  }
