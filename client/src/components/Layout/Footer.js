@@ -11,7 +11,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          kumawatvinit
+          Darshan_Sharma
         </a>
       </h4>
 

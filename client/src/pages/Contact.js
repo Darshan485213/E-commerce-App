@@ -22,8 +22,8 @@ const Contact = () => {
             <div className="contact-details">
               <h3>ShopShot</h3>
               <p>
-                <MdLocationOn /> 123 Main Street <br />
-                Jpr, Raj 12345
+                <MdLocationOn /> Kaptan Building <br />
+                Dadri,G.B. Nagar,203207
               </p>
               <p>
                 <AiOutlineMail /> Email: contact.shopspot@gmail.com
